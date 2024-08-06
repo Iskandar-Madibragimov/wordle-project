@@ -7,7 +7,17 @@ public class main {
         Scanner sc = new Scanner(System.in);
         Random rand = new Random();
 
-        String[] fiveLetterWords = {"happy", "apple", "grape", "train", "smart"};
+        String[] fiveLetterWords = {"apple", "train", "brave", "flame", "grape", "storm", "charm", "lemon", "spark", "ghost",
+        "crisp", "glove", "glory", "peace", "whale", "dance", "shark", "wheat", "quest", "cloud",
+        "sword", "river", "bliss", "mango", "light", "dream", "chase", "world", "beach", "grind",
+        "blaze", "crown", "drift", "frame", "steel", "flock", "grain", "shiny", "frost", "swarm",
+        "phase", "crane", "leech", "wrist", "valor", "trust", "clear", "prism", "shrub", "stark",
+        "straw", "slide", "crush", "flute", "pride", "plush", "fetch", "steal", "pearl", "whisk",
+        "tribe", "flair", "creek", "grace", "crisp", "flood", "flare", "spike", "pluck", "scout",
+        "whisk", "broil", "cloak", "fable", "sling", "pouch", "scorn", "kneel", "bluff", "brand",
+        "blunt", "whirl", "shine", "sweep", "grasp", "froth", "hover", "stack", "slide", "blast",
+        "frost", "forge", "brink", "chill", "shard", "whisk", "clamp", "brood", "latch", "plume"}
+       ;
 
         System.out.println("Guess the 5-letter word!");
 
