@@ -6,6 +6,7 @@ public class main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Random rand = new Random();
+        System.out.println("\u001b[31m" + "Red" + "\u001b[0m");
 
         String[] fiveLetterWords = {"apple", "train", "brave", "flame", "grape", "storm", "charm", "lemon", "spark", "ghost",
         "crisp", "glove", "glory", "peace", "whale", "dance", "shark", "wheat", "quest", "cloud",
@@ -39,18 +40,18 @@ public class main {
                 for (int j = 0; j < randomWord.length(); j++) {
                     char guessedChar = userGuess.charAt(j);
                     if (randomWord.charAt(j) == guessedChar) {
-                        feedback += guessedChar; // Correct position
+                        feedback += "\u001b[32m" + guessedChar + "\u001b[32m"; // Correct position
                     } else if (randomWord.indexOf(guessedChar) != -1) {
-                        feedback += "*"; // Correct letter, wrong position
+                        feedback += "\u001b[33m" + guessedChar + "\u001b[33m"; // Correct letter, wrong position
                     } else {
-                        feedback += "_"; // Incorrect letter
+                        feedback += "\u001b[31m" + guessedChar + "\u001b[0m"; // Incorrect letter
                     }
                 }
                 System.out.println("Feedback: " + feedback);
             }
 
             attempts--;
-            System.out.println("You have " + attempts + " attempt(s) left.");
+            System.out.println("\u001b[37m" + "You have " + attempts + " attempt(s) left." + "\u001b[37m");
         }
 
         if (attempts == 0) {
